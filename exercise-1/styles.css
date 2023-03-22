@@ -1,6 +1,11 @@
 body{
     background-color: black;
     color: white;
+    font-size: large;
+}
+
+#paragraph{
+    color: aquamarine;
 }
 
 /* This allows you to be able to position html elements starting from the top left instead of displaying as block under p5.js canvas */
