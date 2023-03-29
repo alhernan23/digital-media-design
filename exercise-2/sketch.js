@@ -29,8 +29,8 @@ function setup() {
 
     //set the position
     //create arithmatic for x and y position. this lets us read out the position
-    xpos = width/2-200+x;
-    ypos = height/2-200+y;
+    xpos = width/2-100+x;
+    ypos = height/2-100+y;
 
   
     //position the cat based on the arrow keys
@@ -75,11 +75,14 @@ function setup() {
         bear.style.display='none';
 
         //change scene to the next to the next one by adding 1
-        mode++;
+        mode = 2;
+
+        console.log(mode)
       }
 
       //changing of scenes
       if (mode == 2){
+        removeElements();
         background(0);
         bear.style.display='none';
       }
