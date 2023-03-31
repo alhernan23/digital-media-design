@@ -12,22 +12,22 @@ function setup() {
     // make the div called "mySketch" a p5.js canvas element
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('mySketch');
-
-
   }
   
-  function draw() {
+  
+  
+function draw() {
 
     removeElements();
     //lets manipulate the DOM and make our cat move with the arrow keys
-    //create an image element in html
+    //CREATE AN IMAGE element in html
     let cat = createImg("images/cat.png");
-    //select size of image
+    //select SIZE OF IMAGE
     cat.size(200,200);
-     // give it an id
+     //GIVE IMAGE AN ID
      cat.id('cat');
 
-    //set the position
+    //SET THE POSITION
     //create arithmatic for x and y position. this lets us read out the position
     xpos = width/2-100+x;
     ypos = height/2-100+y;
@@ -37,7 +37,7 @@ function setup() {
     cat.position(xpos, ypos);
 
 
-//controls using arrow keys
+//CONTROLS USING ARROW KEYS
     if (keyIsPressed){
       if(keyCode == UP_ARROW){
 
@@ -64,13 +64,15 @@ function setup() {
         x-=5;
       }
 
+
+      // if your cursor is at this position...
       if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
         //make bear appear
         bear.style.display='block';
       }
 
+      //if your cursor is at this position...
       if ((xpos<400) && (ypos<400)){
-
         //hide bear again
         bear.style.display='none';
 
