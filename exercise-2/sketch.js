@@ -42,7 +42,7 @@ function setup() {
       if(keyCode == UP_ARROW){
 
         //minus 5 in the y direction means up
-        y-=5;
+        y -= 5;
         
       } 
       
@@ -76,16 +76,17 @@ function setup() {
 
         //change scene to the next to the next one by adding 1
         mode = 2;
-
         console.log(mode)
       }
-
+      
       //changing of scenes
       if (mode == 2){
         removeElements();
         background(0);
         bear.style.display='none';
       }
+
+      
     }
     // console.log("cat is at: " + xpos + ", " + ypos);
   }
