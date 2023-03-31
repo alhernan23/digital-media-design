@@ -8,7 +8,6 @@ let mode = 1;
 let bear = document.getElementById('bear');
 
 
-
 function setup() {
     // make the div called "mySketch" a p5.js canvas element
     let cnv = createCanvas(windowWidth, windowHeight);
@@ -74,13 +73,14 @@ function draw() {
       if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
         //make bear appear
         bear.style.display='block';
-   
+     
       }
 
       //if your cursor is at this position...
       if ((xpos<400) && (ypos<400)){
         //hide bear again
         bear.style.display='none';
+  
    
 
 
@@ -94,6 +94,7 @@ function draw() {
         removeElements();
         background(0);
         bear.style.display='none';
+  
       }
 
       
