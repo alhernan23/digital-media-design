@@ -7,6 +7,7 @@ let mode = 1;
 
 let bear = document.getElementById('bear');
 
+let wolf = document.getElementById('wolf');
 
 function setup() {
     // make the div called "mySketch" a p5.js canvas element
@@ -21,11 +22,14 @@ function draw() {
     removeElements();
     //lets manipulate the DOM and make our cat move with the arrow keys
     //CREATE AN IMAGE element in html
-    let cat = createImg("images/cat.png");
+    // let cat = createImg("images/cat.png");
+    let red = createImg("images/red.jpg");
     //select SIZE OF IMAGE
-    cat.size(200,200);
+    // cat.size(200,200);
+    red.size(200,200);
      //GIVE IMAGE AN ID
-     cat.id('cat');
+    //  cat.id('cat');
+     red.id('red');
 
     //SET THE POSITION
     //create arithmatic for x and y position. this lets us read out the position
@@ -34,7 +38,8 @@ function draw() {
 
   
     //position the cat based on the arrow keys
-    cat.position(xpos, ypos);
+    // cat.position(xpos, ypos);
+    red.position(xpos, ypos);
 
 
 //CONTROLS USING ARROW KEYS
@@ -68,13 +73,15 @@ function draw() {
       // if your cursor is at this position...
       if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
         //make bear appear
-        bear.style.display='block';
+        // bear.style.display='block';
+        wolf.style.display='block';
       }
 
       //if your cursor is at this position...
       if ((xpos<400) && (ypos<400)){
         //hide bear again
-        bear.style.display='none';
+        // bear.style.display='none';
+        wolf.style.display='none';
 
 
         //CHANGE SCENE to the next to the next one by adding 1
@@ -86,7 +93,8 @@ function draw() {
       if (mode == 2){
         removeElements();
         background(0);
-        bear.style.display='none';
+        // bear.style.display='none';
+        wolf.style.display='none';
       }
 
       

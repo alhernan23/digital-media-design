@@ -14,10 +14,10 @@ body{
 }
 
 .offer{
-    position: absolute;
-    width: 200px;
-    top: 600;
-    left: 800;
+    text-align: center;
+    padding: 200 0 0 650;
+    color: aliceblue;
+    font-weight: bold;
 }
 
 #bear{
