@@ -76,7 +76,8 @@ function draw() {
         //hide bear again
         bear.style.display='none';
 
-        //change scene to the next to the next one by adding 1
+
+        //CHANGE SCENE to the next to the next one by adding 1
         mode = 2;
         console.log(mode)
       }
