@@ -94,7 +94,6 @@ function draw() {
         removeElements();
         background(0);
         bear.style.display='none';
-       
       }
 
       
