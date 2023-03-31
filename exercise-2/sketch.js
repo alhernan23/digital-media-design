@@ -7,7 +7,7 @@ let mode = 1;
 
 let bear = document.getElementById('bear');
 
-let wolf = document.getElementById('wolf');
+
 
 function setup() {
     // make the div called "mySketch" a p5.js canvas element
@@ -73,15 +73,15 @@ function draw() {
       // if your cursor is at this position...
       if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
         //make bear appear
-        // bear.style.display='block';
-        wolf.style.display='block';
+        bear.style.display='block';
+   
       }
 
       //if your cursor is at this position...
       if ((xpos<400) && (ypos<400)){
         //hide bear again
-        // bear.style.display='none';
-        wolf.style.display='none';
+        bear.style.display='none';
+   
 
 
         //CHANGE SCENE to the next to the next one by adding 1
@@ -93,8 +93,8 @@ function draw() {
       if (mode == 2){
         removeElements();
         background(0);
-        // bear.style.display='none';
-        wolf.style.display='none';
+        bear.style.display='none';
+       
       }
 
       
