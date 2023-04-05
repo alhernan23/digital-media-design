@@ -101,6 +101,15 @@ function output() {
     a.id('next');
     colorInput.appendChild(next);
 
+  } else if (answers == "give me the teddy"){
+    background(0,0,255);
+    Answer1.innerHTML = "why of course, scroll down to get it. you are still blue";
+    let teddy = createImg("teddy.png");
+    teddy.size(200,200);
+    let a = createA('page3.html', 'next');
+    a.id('next');
+    colorInput.appendChild(next);
+
   } else {
     background(255,0,0);
     Answer1.innerHTML = "HOW DARE YOU. BLUE IS SUPERIOR. TRY AGAIN";
