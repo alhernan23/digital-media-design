@@ -9,7 +9,9 @@ function setup() {
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('mySketch');
 
-    result = createElement('p', 'type a color');
+
+    //TYPE A COLOR RESPONSE
+    result = createElement('p', '');
     result.style('font-size', '30px');
     result.style('margin', '0px');
     result.style('text-align', 'center');
@@ -31,6 +33,8 @@ function setup() {
     button.mousePressed(output);
 
   }
+  
+
   
   function draw() {
 
