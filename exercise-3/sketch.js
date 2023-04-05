@@ -7,8 +7,6 @@ let Answer1;
 
 let colorInput = document.getElementById('color-input');
 
-let yesNo = document.getElementById('yes-no');
-
 function setup() {
     // make the div called "mySketch" a p5.js canvas element
     let cnv = createCanvas(windowWidth, windowHeight);
@@ -16,7 +14,7 @@ function setup() {
 
 
     //TYPE A COLOR RESPONSE
-    result = createElement('p', 'type "blue"');
+    result = createElement('p', '');
     result.style('font-size', '30px');
     result.style('margin', '0px');
     result.style('text-align', 'center');
@@ -93,9 +91,19 @@ function output() {
   // } else if (answers == "magenta"){
   //   background(255,0,255);
   //   Answer1.innerHTML == answers;
+
+    } else if (answers == "yes"){
+    background(0,0,255);
+    Answer1.innerHTML = "very good. scroll down to see the ice cream you deserve";
+    let yes = createImg("icecream.jpg");
+    yes.size(200,200);
+    let a = createA('page3.html', 'next');
+    a.id('next');
+    colorInput.appendChild(next);
+
   } else {
     background(255,0,0);
-    Answer1.innerHTML = "HOW DARE YOU. TYPE IN ONLY THE COLOR BLUE, NO OTHER COLOR";
+    Answer1.innerHTML = "HOW DARE YOU. BLUE IS SUPERIOR. TRY AGAIN";
   }
 }
 
