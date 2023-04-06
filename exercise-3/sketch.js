@@ -106,9 +106,17 @@ function output() {
     Answer1.innerHTML = "why of course, scroll down to get it. you are still blue";
     let teddy = createImg("teddy.png");
     teddy.size(200,200);
-    let a = createA('page3.html', 'next');
+    let a = createA('page4.html', 'next');
     a.id('next');
     colorInput.appendChild(next);
+
+  } else if (answers == "i am not blue"){
+      background(0,255,0);
+      Answer1.innerHTML = "yes, you are free, child";
+      //a link will appear for the next page
+      let a = createA('page5.html', 'next');
+      a.id('next');
+      colorInput.appendChild(next);
 
   } else {
     background(255,0,0);
