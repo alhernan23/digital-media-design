@@ -120,7 +120,7 @@ function output() {
     } else if (answers == "blue is superior"){
       background(0,0,255);
       Answer1.innerHTML = "yes, you are stuck in this endless loop forever";
-      let a = createA('page6.html', 'next');
+      let a = createA('index.html', 'next');
       a.id('next');
       colorInput.appendChild(next);
 
