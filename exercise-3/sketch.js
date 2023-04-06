@@ -113,8 +113,14 @@ function output() {
   } else if (answers == "i am not blue"){
       background(0,255,0);
       Answer1.innerHTML = "yes, you are free, child";
-      //a link will appear for the next page
       let a = createA('page5.html', 'next');
+      a.id('next');
+      colorInput.appendChild(next);
+
+    } else if (answers == "blue is superior"){
+      background(0,0,255);
+      Answer1.innerHTML = "yes, you are stuck in this endless loop forever";
+      let a = createA('page6.html', 'next');
       a.id('next');
       colorInput.appendChild(next);
 
