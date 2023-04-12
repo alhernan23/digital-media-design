@@ -3,9 +3,9 @@
 let violet, iris, jasmine;
 
 //declare variable up at the top
-let mySound1, mySound2, mySound3;
+// let mySound1, mySound2, mySound3;
 
-var dragging = false; // Is the object being dragged?
+// var dragging = false; // Is the object being dragged?
 
 
 //load sounds before you use them
@@ -24,7 +24,7 @@ function setup() {
     cnv.parent('mySketch');
 
     //play sound when mouse is pressed on the canvas
-    //cnv.mousePressed(toggleSound);
+    // cnv.mousePressed(toggleSound);
 
     violet = createImg("images/violet.png");
     violet.class('flower');
@@ -71,6 +71,11 @@ function setup() {
       mySound3.play();
     }
   }
+
+//when you click on canvas, the sound just plays
+  // function toggleSound(){
+  //   mySound1.play();
+  // }
 
   
   function windowResized() {
