@@ -22,8 +22,8 @@ function preload(){
   mySound1 = loadSound('audio/');
   mySound2 = loadSound('audio/');
   mySound3 = loadSound('audio/');
-
-
+  mySound4 = loadSound('audio/');
+  mySound5 = loadSound('audio/');
 }
 
 
@@ -49,26 +49,72 @@ function setup() {
 
     red = createImg("");
     red.class('object');
-    red.position();
-    
+    red.position(100,300);
+
+    orange = createImg("");
+    orange.class('object');
+    orange.position(200,300);
+
+    yellow = createImg("");
+    yellow.class('object');
+    yellow.position(300,300);
+
+    green = createImg("");
+    green.class('object');
+    green.position(400,300);
+
+    blue = creatImg("");
+    blue.class('object');
+    blue.position(500,300);  
   }
   
   function draw() {
+    // background(0);
+    // violet.mousePressed(makeViolet);
+    // iris.mousePressed(makeIris);
+    // jasmine.mousePressed(makeJasmine);
+
     background(0);
-    violet.mousePressed(makeViolet);
-    iris.mousePressed(makeIris);
-    jasmine.mousePressed(makeJasmine);
+    red.mousePressed(makeRed);
+    orange.mousePressed(makeOrange);
+    yellow.mousePressed(makeYellow);
+    green.mousePressed(makeGreen);
+    blue.mousePressed(makeBlue);
   }
 
-  function makeViolet() {
-    if (mySound1.isPlaying()){
-      mySound1.pause();
-    } else {
-      mySound1.play();
+  // function makeViolet() {
+  //   if (mySound1.isPlaying()){
+  //     mySound1.pause();
+  //   } else {
+  //     mySound1.play();
+  //   }
+  // }
+
+  // function makeIris() {
+  //   if (mySound2.isPlaying()){
+  //     mySound2.pause();
+  //   } else {
+  //     mySound2.play();
+  //   }
+  // }
+
+  // function makeJasmine() {
+  //   if (mySound3.isPlaying()){
+  //     mySound3.pause();
+  //   } else {
+  //     mySound3.play();
+  //   }
+  // }
+
+    function makeRed(){
+      if (mySound1.isPlaying()){
+        mySound1.pause(); 
+      } else{
+        mySound1.play();
+      }
     }
-  }
 
-  function makeIris() {
+    function makeOrange() {
     if (mySound2.isPlaying()){
       mySound2.pause();
     } else {
@@ -76,12 +122,27 @@ function setup() {
     }
   }
 
-
-  function makeJasmine() {
+  function makeYellow() {
     if (mySound3.isPlaying()){
       mySound3.pause();
     } else {
       mySound3.play();
+    }
+  }
+
+  function makeGreen(){
+    if (mySound4.isPlaying()){
+      mySound4.pause(); 
+    } else{
+      mySound4.play();
+    }
+  }
+
+  function makeBlue(){
+    if (mySound5.isPlaying()){
+      mySound5.pause(); 
+    } else{
+      mySound5.play();
     }
   }
 
@@ -90,7 +151,6 @@ function setup() {
   //   mySound1.play();
   // }
 
-  
   function windowResized() {
     // resize the canvas when the screen is resized.
     resizeCanvas(windowWidth, windowHeight);
