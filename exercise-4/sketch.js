@@ -19,11 +19,11 @@ function preload(){
   // mySound3 = loadSound('audio/kirakira.mp3');
 
   soundFormats('mp3', 'ogg');
-  mySound1 = loadSound('audio/');
-  mySound2 = loadSound('audio/');
-  mySound3 = loadSound('audio/');
-  mySound4 = loadSound('audio/');
-  mySound5 = loadSound('audio/');
+  mySound1 = loadSound('audio/Plantasia.mp3');
+  mySound2 = loadSound('audio/Plantasia.mp3');
+  mySound3 = loadSound('audio/Plantasia.mp3');
+  mySound4 = loadSound('audio/Plantasia.mp3');
+  mySound5 = loadSound('audio/Plantasia.mp3');
 }
 
 
@@ -47,25 +47,25 @@ function setup() {
     // jasmine.class('flower');
     // jasmine.position(1200, 300);
 
-    red = createImg("");
+    red = createImg("images/red.png");
     red.class('object');
     red.position(100,300);
 
-    orange = createImg("");
+    orange = createImg("images/orange.png");
     orange.class('object');
-    orange.position(200,300);
+    orange.position(400,300);
 
-    yellow = createImg("");
+    yellow = createImg("images/yellow.png");
     yellow.class('object');
-    yellow.position(300,300);
+    yellow.position(700,300);
 
-    green = createImg("");
+    green = createImg("images/green.png");
     green.class('object');
-    green.position(400,300);
+    green.position(1000,300);
 
-    blue = creatImg("");
+    blue = createImg("images/blue.png");
     blue.class('object');
-    blue.position(500,300);  
+    blue.position(1300,300);  
   }
   
   function draw() {
