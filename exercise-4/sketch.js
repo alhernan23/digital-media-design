@@ -19,11 +19,11 @@ function preload(){
   // mySound3 = loadSound('audio/kirakira.mp3');
 
   soundFormats('mp3', 'ogg');
-  mySound1 = loadSound('audio/Plantasia.mp3');
-  mySound2 = loadSound('audio/Plantasia.mp3');
-  mySound3 = loadSound('audio/Plantasia.mp3');
-  mySound4 = loadSound('audio/Plantasia.mp3');
-  mySound5 = loadSound('audio/Plantasia.mp3');
+  mySound1 = loadSound('audio/redsound.mp3');
+  mySound2 = loadSound('audio/orangesound.mp3');
+  mySound3 = loadSound('audio/yellowsound.mp3');
+  mySound4 = loadSound('audio/greensound.mp3');
+  mySound5 = loadSound('audio/bluesound.mp3');
 }
 
 
