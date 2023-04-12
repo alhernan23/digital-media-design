@@ -1,6 +1,8 @@
 //p5 sound library https://p5js.org/reference/#/libraries/p5.sound
 
-let violet, iris, jasmine;
+// let violet, iris, jasmine;
+
+let red, orange, yellow, green, blue;
 
 //declare variable up at the top
 // let mySound1, mySound2, mySound3;
@@ -11,10 +13,17 @@ let violet, iris, jasmine;
 //load sounds before you use them
 function preload(){
 
+  // soundFormats('mp3', 'ogg');
+  // mySound1 = loadSound('audio/Plantasia.mp3');
+  // mySound2 = loadSound('audio/fanfare.mp3');
+  // mySound3 = loadSound('audio/kirakira.mp3');
+
   soundFormats('mp3', 'ogg');
-  mySound1 = loadSound('audio/Plantasia.mp3');
-  mySound2 = loadSound('audio/fanfare.mp3');
-  mySound3 = loadSound('audio/kirakira.mp3');
+  mySound1 = loadSound('audio/');
+  mySound2 = loadSound('audio/');
+  mySound3 = loadSound('audio/');
+
+
 }
 
 
@@ -26,17 +35,21 @@ function setup() {
     //play sound when mouse is pressed on the canvas
     // cnv.mousePressed(toggleSound);
 
-    violet = createImg("images/violet.png");
-    violet.class('flower');
-    violet.position(200, 300);
+    // violet = createImg("images/violet.png");
+    // violet.class('flower');
+    // violet.position(200, 300);
 
-    iris = createImg("images/iris.png");
-    iris.class('flower');
-    iris.position(700, 300);
+    // iris = createImg("images/iris.png");
+    // iris.class('flower');
+    // iris.position(700, 300);
 
-    jasmine = createImg("images/jasmine.png");
-    jasmine.class('flower');
-    jasmine.position(1200, 300);
+    // jasmine = createImg("images/jasmine.png");
+    // jasmine.class('flower');
+    // jasmine.position(1200, 300);
+
+    red = createImg("");
+    red.class('object');
+    red.position();
     
   }
   
