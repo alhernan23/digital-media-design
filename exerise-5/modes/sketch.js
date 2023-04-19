@@ -17,7 +17,8 @@ function setup() {
   
     if (mode == 1){
       //functions that pertain for mode 1 called here
-      
+      displayCat();
+
     }
 
     if (mode == 2){
