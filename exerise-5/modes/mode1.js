@@ -7,10 +7,10 @@ function forrest1(){
     forrestBg1.size(width, height);
 }
 
-function displayCat(){
-    cat = createImg('images/cat.png');
-    cat.position(200,200);
-    cat.size(200,200);
+function displayRed(){
+    red = createImg('images/red.png');
+    red.position(700,600);
+    red.size(200,200);
 
 
 }

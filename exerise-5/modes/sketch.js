@@ -17,18 +17,18 @@ function setup() {
   
     if (mode == 1){
       //functions that pertain for mode 1 called here
-      displayCat();
+      displayRed();
 
     }
 
     if (mode == 2){
       //functions that pertain for mode 2 called here
-      
+      displayOrange();
     }
 
     if (mode == 3){
       //functions that pertain for mode 3 called here
-      
+      displayYellow();
     }
 
     if (mode < 1){
